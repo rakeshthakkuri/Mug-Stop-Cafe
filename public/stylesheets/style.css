@@ -71,6 +71,14 @@ legend {
  .facilities span.badge {
   margin-right: 2px;
  }
+ .image-spacing {
+  margin: 10px; /* Adjust this value as needed */
+}
+.equal-size {
+  height: 500px; /* Set a fixed height */
+  width: 100%; /* Make it responsive to the column */
+  object-fit: cover; /* Ensure the image covers the container without stretching */
+}
  p {
   margin-bottom: 0.65rem;
  }
