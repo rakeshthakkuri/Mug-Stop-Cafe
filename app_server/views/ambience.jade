@@ -1,0 +1,61 @@
+//- Extend the layout page
+extends layout
+
+block content
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Café Abidence
+    link(rel="stylesheet", href="styles.css") // Optional CSS file
+    style.
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f9f9f9;
+      }
+      header {
+        margin-top:70px;
+          background-color: #fbdb3b;
+          text-align: center;
+          padding: 20px;
+      }
+      h1 {
+          margin: 0;
+          color: #333;
+      }
+      .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 20px;
+      }
+      .gallery img {
+          width: 500px;
+          height: 400px;
+          margin: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      footer {
+          text-align: center;
+          padding: 20px;
+          background-color: #fbdb3b;
+          margin-top: 20px;
+      }
+
+  header
+    h1 Welcome to Mug Stop
+    p Your favorite place for coffee and pastries!
+
+  main
+    h2(style="margin-left:100px; font-size: 60px;") Our Ambience
+    section.gallery
+      img(src="/images/joshua-rodriguez-f7zm5TDOi4g-unsplash.jpg", alt="Coffee")
+      img(src="/images/kyle-ryan-6g1kqseqsEk-unsplash.jpg", alt="Pastry")
+      img(src="/images/lee-campbell-31QfYo1h32o-unsplash.jpg", alt="Interior")
+      img(src="/images/nafinia-putra-Kwdp-0pok-I-unsplash.jpg", alt="Outdoor Seating")
+      img(src="/images/roman-bozhko-OXXsAafHDeo-unsplash.jpg", alt="Barista")
+      img(src="/image-of-cozy-ambience-of-cafe-free-photo.jpg", alt="Menu Items")
+
+  

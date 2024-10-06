@@ -1,0 +1,152 @@
+extends layout
+
+block content
+  style.
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      padding: 20px;
+      //- background-image: url(menu_bg.jpg);
+    }
+
+    .menu-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #fbdb3b;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 2.5rem;
+    }
+
+    .menu-section {
+      margin-bottom: 40px;
+    }
+
+    .menu-section h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #231c1c;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .item-price {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    /* Footer Styling */
+    .footer-container {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fbdb3b; /* same color as menu */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 1rem;
+      color: #050404;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #211e1e;
+    }
+
+  .menu-container
+    h1 Mug Stop Menu
+
+    //- Coffee Section
+    .menu-section
+      h2 Coffee
+      .menu-item
+        span.item-name Espresso
+        span.item-price &#8377 249
+      .menu-item
+        span.item-name Cappuccino
+        span.item-price &#8377 249
+      .menu-item
+        span.item-name Latte
+        span.item-price &#8377 249
+      .menu-item
+        span.item-name Americano
+        span.item-price &#8377 249
+
+    //- Pasta Section
+    .menu-section
+      h2 Pasta
+      .menu-item
+        span.item-name Pesto Pasta
+        span.item-price &#8377 299
+      .menu-item
+        span.item-name Macaroni and Cheese
+        span.item-price &#8377 399
+      .menu-item
+        span.item-name Baked Ziti
+        span.item-price &#8377 349
+      .menu-item
+        span.item-name Shells with Ricotta
+        span.item-price &#8377 349
+
+    //- Pastries Section
+    .menu-section
+      h2 Pastries
+      .menu-item
+        span.item-name Croissant
+        span.item-price &#8377 249
+      .menu-item
+        span.item-name Muffin
+        span.item-price &#8377 249
+      .menu-item
+        span.item-name Bagel
+        span.item-price &#8377 249
+
+    //- Main Course Section
+    .menu-section
+      h2 Main Course
+      .menu-item
+        span.item-name Chicken Alfredo
+        span.item-price &#8377 399
+      .menu-item
+        span.item-name Salmon Fillet
+        span.item-price &#8377 399
+      .menu-item
+        span.item-name Mushroom Risotto
+        span.item-price &#8377 449
+      .menu-item
+        span.item-name Fish and Chips
+        span.item-price &#8377 499
+
+  .footer-container
+    footer
+      | This is a sample of our menu. We invite you to visit our café for more delicious options!

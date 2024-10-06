@@ -9,4 +9,6 @@ router.get('/location', ctrlLocations.locationInfo);
 router.get('/location/review/new', ctrlLocations.addReview);
 /* Other pages */
 router.get('/about', ctrlOthers.about);
+router.get('/menu', ctrlOthers.menu);
+router.get('/ambience', ctrlOthers.ambience);
 module.exports = router;
