@@ -88,18 +88,38 @@ legend {
  a:hover {
   color:#fff
  }
- /* .logo {
-  width: 50px; 
-  height: auto; 
-  margin-right: 10px;
-  vertical-align: middle;
-} */
+ /* Container for the hover image */
+/* Container for the hover image */
+.hover-image-preview {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Badge hover effect */
+.badge-item:hover {
+  cursor: pointer;
+}
+
+
+/* Show the image when hovering over the badge */
+.badge-item:hover + .hover-image-preview {
+  display: block;
+}
+
 
  body {
   font-family: "Cabin", Arial, sans-serif;
   color: #fff;
   background-color: #108a93;
-  background-image: url(cafe-7454951_1280.jpg);
+  background-image: url(/images/cafe-7454951_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
