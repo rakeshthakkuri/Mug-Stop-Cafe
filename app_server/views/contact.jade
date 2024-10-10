@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Contact Us
+
+  .row.contact-info
+    .col-12.col-lg-6
+      h2 Get in Touch
+      p
+        | Have any inquiries or need assistance with our services? Our team is here to help. Whether you’re looking for more information about our offerings, have questions about your visit, or want to explore collaboration opportunities, feel free to reach out using the form below. We’re committed to providing the support you need.
+
+      .contact-details
+        h5 Contact Information
+        p 
+          i.fas.fa-phone-alt
+          |  Phone: 
+          a(href="tel:+919392498378") +91 9392498378
+        p
+          i.fab.fa-instagram
+          |  Instagram: 
+          a(href="https://www.instagram.com/mug.stop/?igsh=eTZrNjgwNzV3dWZl") @mug.stop
+
+  .row
+    .col-12.col-lg-8.offset-lg-2
+      form(action="/contact", method="POST")
+        .form-group
+          label(for="name") Name
+          input#name.form-control(type="text", name="name", placeholder="Your Name", required)
+
+        .form-group
+          label(for="email") Email
+          input#email.form-control(type="email", name="email", placeholder="Your Email", required)
+
+        .form-group
+          label(for="subject") Subject
+          input#subject.form-control(type="text", name="subject", placeholder="Subject")
+
+        .form-group
+          label(for="message") Message
+          textarea#message.form-control(name="message", rows="5", placeholder="Your Message", required)
+
+        button.btn.btn-primary(type="submit") Send Message

@@ -8,8 +8,12 @@ const menu = (req, res) => {
 const ambience = (req, res) => {
     res.render('ambience', { title: 'Ambience' });
    };
+const contact = (req, res) => {
+    res.render('contact', { title: 'Contact US' });
+   };
 module.exports = {
     about,
     menu,
-    ambience
+    ambience,
+    contact
    };

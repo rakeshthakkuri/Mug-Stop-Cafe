@@ -11,4 +11,5 @@ router.get('/location/review/new', ctrlLocations.addReview);
 router.get('/about', ctrlOthers.about);
 router.get('/menu', ctrlOthers.menu);
 router.get('/ambience', ctrlOthers.ambience);
+router.get('/contact', ctrlOthers.contact);
 module.exports = router;
