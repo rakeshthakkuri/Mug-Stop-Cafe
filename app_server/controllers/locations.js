@@ -1,6 +1,6 @@
 /* GET 'home' page */
 const homelist = (req, res) => {
-    res.render('locations-list', {
+    res.render('home', {
     title: 'CAFÈ ',
     pageHeader: {
     title: 'CAFÈ Shop',
@@ -9,7 +9,7 @@ const homelist = (req, res) => {
     locations: [{
     name: 'Mug Stop Cafè',
     address: 'Plot 42-44, Serial 8, 19-22, Gachibowli, Hyderabad',
-    rating: 4,
+    rating: 3,
     facilities: ['Continental', ' Italian', 'Sandwich', 'Pizza', 'Beverages'],
     distance: '2.6KM From Gachibowli'
      }
@@ -22,7 +22,7 @@ const homelist = (req, res) => {
    };
    /* GET 'Add review' page */
    const addReview = (req, res) => {
-    res.render('location-review-form', { title: 'Add review' });
+    res.render('review', { title: 'Add review' });
    };
    
    module.exports = {
