@@ -1,12 +1,14 @@
 extends layout
 
 block content
+  //- Banner Row
   .row.banner
     .col-12
       .d-flex.align-items-center 
         img(src="/images/IMG_1857.jpg", alt="MUG STOP Café", style="width: 90px; height: 90px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);")
         h1(style="font-size: 3.7rem; margin-left: 20px;") MUG STOP
 
+  //- Content Row
   .row
     .col-12.col-md-8
       h4(style="font-size: 3.5rem;") 
@@ -20,19 +22,26 @@ block content
       p(style="font-size: 1.3rem;") Just 2.6KM from Gachibowli
       p(style="font-size: 1.3rem;").address Plot 42-44, Serial 8, 19-22, Gachibowli, Hyderabad
       p(style="font-size: 1.5rem;").facilities
-        span.badge.badge-warning.badge-item(data-image="/images/continental.webp") Continental
-        span.badge.badge-warning.badge-item(data-image="/images/italian.jpg") Italian
-        span.badge.badge-warning.badge-item(data-image="/images/sandwich.jpeg") Sandwich
-        span.badge.badge-warning.badge-item(data-image="/images/pizza.jpg") Pizza
-        span.badge.badge-warning.badge-item(data-image="/images/beverages.jpg") Beverages
+        a(href="/continental")
+          span.badge.badge-warning.badge-item(data-image="/images/continental.webp") Continental
+        a(href="/italian")
+          span.badge.badge-warning.badge-item(data-image="/images/italian.jpg") Italian
+        a(href="/sandwich")
+          span.badge.badge-warning.badge-item(data-image="/images/sandwich.jpeg") Sandwich
+        //- Pizza Badge with Anchor Link
+        a(href="/pizza")
+          span.badge.badge-warning.badge-item(data-image="/images/pizza.jpg") Pizza
+        a(href="/beverages")
+          span.badge.badge-warning.badge-item(data-image="/images/beverages.jpg") Beverages
 
     .col-12.col-md-4
       p.lead Looking for a cozy spot with reliable Wi-Fi and a comfortable seat? At MUG STOP, we help you discover the perfect places to work or relax while enjoying delicious coffee, tempting pastries, or even a refreshing pint.
       p(style="font-size: 1.2rem;") Whether you're in the mood for a hot espresso or a slice of pizza, we offer a variety of dishes to satisfy your cravings. Visit us and enjoy a welcoming atmosphere.
 
-  //- Container for hover image preview
+ 
   .hover-image-preview  
 
+//- Inline Scripts
 script.
   console.log("Test inline script");
 script(src="/javascripts/hover.js")
